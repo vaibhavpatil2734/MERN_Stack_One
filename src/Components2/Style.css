@@ -1,0 +1,127 @@
+.card1{
+    height:"100%";
+    width: "100%";
+    display: grid;
+    
+    grid-template-columns: repeat(4, 15%);
+    grid-template-rows: 330%;
+    grid-template-areas: 'SubCard MainCard MainCard MainCard MainCard';
+}
+
+.SubCard{
+    grid-area: SubCard;
+    background-color: #999999;
+    
+}
+.MainCard{
+    grid-area: MainCard;
+}
+
+
+.SubCardLayout{
+    height:"100%";
+    width: "100%";
+    display: grid;
+    
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: 20%;
+    grid-template-areas: 'sub1'
+                         'sub2'
+                         'sub3'
+                         'sub3.1'
+                         'sub3.1'
+                         'sub3.1'
+                         'sub3.1'
+                         'sub4';
+}
+
+.ef1:hover{
+    background-color:#808080;
+    border-radius: 8%;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  .video-background video {
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+  }
+
+  .bgc{
+    background-color: #b3b3b3;
+  }
+
+  .i-1 {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    transform: translate(-30%, -50%);
+    color: #fff;
+    z-index: 1;
+  }
+
+  .subcenter{
+    margin-left: 10%;
+  }
+  
+
+
+  .video-background2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  .video-background2 video {
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    min-width: 140%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+  }
+
+  .accimg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  .acccom{
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    transform: translate(-30%, -50%);
+    color: #fff;
+    z-index: 1;
+  }
+
+  .bg-mc{
+    background-color: #666666;
+  }
