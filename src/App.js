@@ -10,6 +10,8 @@ function App() {
    setNum1(num);
   };
 
+  
+
   return (
     <div className="App">
       {num1===0 && <div><Home gethomenum={getHomeNum} /><Navbar getHomeNum={getHomeNum}/></div>}

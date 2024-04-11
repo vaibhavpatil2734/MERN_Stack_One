@@ -17,7 +17,9 @@ export default function SubCard(props) {
      <hr class="hr" />
      <div className='sub3 ef1 ' onClick={()=>{setdata(2)}}><h5 className='subcenter'>My Blogs</h5></div>
      <hr class="hr" />
-     <div className='sub4 ef1 ' onClick={()=>{setdata(3)}}><h5 className='subcenter'>About Me</h5></div>
+     <div className='sub4 ef1 ' onClick={()=>{setdata(3)}}><h5 className='subcenter'>Task Manager</h5></div>
+     <hr class="hr" />
+     <div className='sub4 ef1 ' onClick={()=>{setdata(100)}}><h5 className='subcenter'>About Me</h5></div>
      <hr class="hr" />
 
 
