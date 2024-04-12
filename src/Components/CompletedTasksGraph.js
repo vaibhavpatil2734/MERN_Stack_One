@@ -49,7 +49,7 @@ const CompletedTasksGraph = ({ tasks }) => {
   const options = {
     scales: {
       x: {
-        type: 'category', // Specify the scale type as 'category' for x-axis labels
+        type: 'category',
       },
     },
   };
