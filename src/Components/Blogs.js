@@ -48,7 +48,7 @@ export default function Blogs() {
   };
 
   return (
-    <div>
+    <div className='mt-5'>
       <button className="btn btn-outline-light m-5" onClick={handleCreateClick} >
         Create New Blog
       </button>

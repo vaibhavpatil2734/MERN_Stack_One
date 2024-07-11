@@ -11,7 +11,7 @@ export default function SubCard(props) {
     props.getsubcardnum(a)
   }
   return (
-    <div className='SubCardLayout '>
+    <div className='SubCardLayout subcard'>
      
      <div className='sub2 mt-3 ef1' onClick={()=>{setdata(1)}}><h5 className='subcenter'>Smart Search</h5></div>
      <hr class="hr" />

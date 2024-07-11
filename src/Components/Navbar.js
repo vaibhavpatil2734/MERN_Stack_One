@@ -4,7 +4,7 @@ export default function Navbar(props) {
   return (
     <div>
       <div>
-        <nav className="navbar navbar-expand-lg navbar-light bgc">
+        <nav className="navbar navbar-expand-lg navbar-light bgc" style={{position:'fixed', width:'100%', zIndex:'10'}}>
           <div className="container-fluid">
             <a className="navbar-brand mx-auto d-block" href="#">
               LostGalaxyStar
