@@ -24,7 +24,7 @@ function TaskForm({ onAddTask }) {
   return (
     <div className='tf'>
       <form onSubmit={handleSubmit}>
-        <lebel className='fm'><b>Task Name : </b></lebel>
+        <label className='fm'><b>Task Name : </b></label>
         <input
           className='fm'
           type="text"
@@ -32,7 +32,7 @@ function TaskForm({ onAddTask }) {
           value={text}
           onChange={(e) => setText(e.target.value)}
         />
-        <lebel className='fm'><b>Phase Name :</b> </lebel>
+        <label className='fm'><b>Phase Name :</b> </label>
         <input
           className='fm'
           type="text"
@@ -40,11 +40,11 @@ function TaskForm({ onAddTask }) {
           value={phase}
           onChange={(e) => setPhase(e.target.value)}
         />
-        <br></br>
-        <lebel className='fm'><b>Deadline : </b></lebel>
+        <br />
+        <label className='fm'><b>Deadline : </b></label>
         <input
           className='fm'
-          type="date"
+          type="datetime-local"
           value={deadline}
           onChange={(e) => setDeadline(e.target.value)}
         />
