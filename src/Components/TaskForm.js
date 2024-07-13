@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function TaskForm({ onAddTask }) {
   const [text, setText] = useState('');
@@ -8,6 +8,17 @@ function TaskForm({ onAddTask }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!text.trim()) return;
+
+    const currentDateTime = new Date();
+    const deadlineDateTime = new Date(deadline);
+
+    if (deadlineDateTime <= currentDateTime) {
+      alert('Deadline must be a future date and time.');
+      return;
+    }
+
+    const timeDifference = deadlineDateTime - currentDateTime;
+
     const newTask = {
       id: Math.random().toString(36).substr(2, 9),
       text,
@@ -19,6 +30,11 @@ function TaskForm({ onAddTask }) {
     setText('');
     setPhase('');
     setDeadline('');
+
+    // Set a timeout to trigger an alert when the deadline is reached
+    setTimeout(() => {
+      alert(`The deadline for task "${newTask.text}" has been reached.`);
+    }, timeDifference);
   };
 
   return (
