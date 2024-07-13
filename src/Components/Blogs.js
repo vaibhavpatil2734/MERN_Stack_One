@@ -116,7 +116,7 @@ export default function Blogs() {
       )}
 
       {blogData.map((blog, index) => (
-        <div key={index} className="card mb-3">
+        <div key={index} className="card mb-3 p-5">
           <img src={blog.image} className="card-img-top" alt="Blog Image" />
           <div className="card-body">
             <h5 className="card-title">{blog.title}</h5>

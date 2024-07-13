@@ -28,7 +28,7 @@ export default function About() {
       <a href="https://www.linkedin.com/in/your_username" target="_blank" rel="noopener noreferrer">
         <FaLinkedin size={40} />
       </a>
-      <a href="https://github.com/your_username" target="_blank" rel="noopener noreferrer">
+      <a href="https://github.com/vaibhavpatil2734" target="_blank" rel="noopener noreferrer">
         <FaGithub size={40}style={{ color: 'black' }} />
       </a>
     </div>
