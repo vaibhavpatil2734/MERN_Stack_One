@@ -1,3 +1,9 @@
 .zforCreation{
     z-index: 100;
+    position: relative;
+    top: 30%;
+    left: 40%;
+    height: 40%;
+    width: 40%;
+    background-color: aqua;
 }

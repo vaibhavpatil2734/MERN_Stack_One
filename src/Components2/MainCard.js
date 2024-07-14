@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import TaskForm from '../Components/TaskForm';
-import TaskList from '../Components/TaskList';
+import TaskForm from '../Components/TaskTool/TaskForm';
+import TaskList from '../Components/TaskTool/TaskList';
 import SearchTool from '../Components/SearchTool';
 import CompletedTasksGraph from '../Components/CompletedTasksGraph'; // Import the graph component
 import '../Components2/Style.css';
 import About from '../Components/About';
 import Blogs from '../Components/Blogs';
-import TaskManager from '../Components/TaskManager';
+import TaskManager from '../Components/TaskTool/TaskManager';
 import MyCreation from '../Components/MyCreation/MyCreation';
 
 export default function MainCard(props) {
@@ -48,7 +48,7 @@ export default function MainCard(props) {
         {props.num === 2 && <div><Blogs/></div>}
         {props.num === 3 && (
           <div>
-            <TaskForm onAddTask={addTask} />
+            <TaskForm onAddTask={addTask}/>
             <TaskList tasks={tasks} onCompleteTask={completeTask} onDeleteTask={deleteTask} />
             <CompletedTasksGraph tasks={tasks} /> {/* Include the graph component */}
           </div>
