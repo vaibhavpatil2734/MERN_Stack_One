@@ -7,6 +7,7 @@ import '../Components2/Style.css';
 import About from '../Components/About';
 import Blogs from '../Components/Blogs';
 import TaskManager from '../Components/TaskManager';
+import MyCreation from '../Components/MyCreation/MyCreation';
 
 export default function MainCard(props) {
   const [tasks, setTasks] = useState([]);
@@ -52,6 +53,7 @@ export default function MainCard(props) {
             <CompletedTasksGraph tasks={tasks} /> {/* Include the graph component */}
           </div>
         )}
+        {props.num === 4 && <div><MyCreation/></div>}
         {props.num === 100 && <div><About/></div>}
       </div>
     </div>
