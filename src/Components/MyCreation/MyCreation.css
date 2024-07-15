@@ -20,15 +20,12 @@
 .card .card-body {
     padding: 20px;
 }
-
-@keyframes slideInFromLeft {
-    100%{
-        transform: translateX(0);
-    }
-     0%{
-        transform: translateX(-100%);
-    }
+.classone{
+    color: #d01414;
 }
+
+
+/* adding comment */
 
 .animated {
     animation-duration: 1s;
