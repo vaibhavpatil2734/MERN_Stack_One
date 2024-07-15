@@ -1,9 +1,8 @@
-.zforCreation{
-    z-index: 100;
-    position: relative;
-    top: 30%;
-    left: 40%;
-    height: 40%;
-    width: 40%;
-    background-color: aqua;
-}
+.i-creation{
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    transform: translate(-30%, -50%);
+    color: #fff;
+    z-index: 1;
+  }

@@ -31,7 +31,7 @@ export default function MainCard(props) {
 
   return (
     <div>
-      <div className='bg-secondary'>
+      <div className='bg-danger'>
         <div className="video-background">
           {props.num === 1 ? (
             <video autoPlay loop muted>
@@ -53,8 +53,9 @@ export default function MainCard(props) {
             <CompletedTasksGraph tasks={tasks} /> {/* Include the graph component */}
           </div>
         )}
-        {props.num === 4 && <div><MyCreation/></div>}
+        {props.num === 4 && <div style={{zIndex:100}}><MyCreation/></div>}
         {props.num === 100 && <div><About/></div>}
+        
       </div>
     </div>
   );
