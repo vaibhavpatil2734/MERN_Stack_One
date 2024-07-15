@@ -2,7 +2,39 @@
     position: absolute;
     top: 40%;
     left: 45%;
+    height:40%;
+    width: 80%;
     transform: translate(-30%, -50%);
-    color: #fff;
+    background-color: #d01414;
     z-index: 1;
   }
+
+
+  .card {
+    width: 300px;
+    margin: 50px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.card .card-body {
+    padding: 20px;
+}
+
+@keyframes slideInFromLeft {
+    100%{
+        transform: translateX(0);
+    }
+     0%{
+        transform: translateX(-100%);
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.slideInFromLeft {
+    animation-name: slideInFromRight;
+}
