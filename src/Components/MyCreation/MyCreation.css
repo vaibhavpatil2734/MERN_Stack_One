@@ -10,28 +10,3 @@
   }
 
 
-  .card {
-    width: 300px;
-    margin: 50px auto;
-    overflow: hidden;
-    position: relative;
-}
-
-.card .card-body {
-    padding: 20px;
-}
-.classone{
-    color: #d01414;
-}
-
-
-/* adding comment */
-
-.animated {
-    animation-duration: 1s;
-    animation-fill-mode: both;
-}
-
-.slideInFromLeft {
-    animation-name: slideInFromRight;
-}
