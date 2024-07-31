@@ -1,14 +1,37 @@
-.i-creation{
-    position: absolute;
-    top: 53%;
-    left: 42%;
-    height:83%;
-    width: 80%;
-    transform: translate(-30%, -50%);
-    background-color: #d01414;
-    z-index: 1;
-  }
+.i-creation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #282c34;
+  color: white;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
 
-.profileIMG{
-  border-radius: 500px;
+.image-container {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  z-index: 2;
+}
+
+.profileIMG {
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.profileIMG:hover {
+  transform: scale(1.1);
+}
+
+.text-line {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  position: absolute;
+  top: 25%;
+  left: 24%;
 }
