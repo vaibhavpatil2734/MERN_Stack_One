@@ -34,7 +34,7 @@ export default function MyCreation() {
           transition={{ duration: 1, delay: 1.5 }}
         >
           <h1 className='text-light'>
-            <b>Password List Generator</b>
+            <b>Welcome to My Creation!</b>
           </h1>
         </motion.div>
         <motion.div 
@@ -47,13 +47,41 @@ export default function MyCreation() {
              The primary purpose of a password generator is to provide users with complex and secure passwords that are difficult to guess or crack, thus protecting their online accounts and sensitive data from unauthorized access.
              Key Features
           </h4>
-          <h5>
-          <b>Enhanced Security:</b> Generates strong, random passwords that are less susceptible to brute-force attacks and dictionary attacks.
-          <br></br><b>Convenience:</b> Saves time and effort by creating complex passwords automatically.
-          <br/><b>Consistency:</b> Ensures adherence to password policies and complexity requirements.
-          </h5>
+          <h4>
+            Random Password Generation:
+          </h4>
+          <p>
+            The core functionality is to generate random passwords. Users can specify criteria such as length, inclusion of uppercase and lowercase letters, numbers, and special characters.
+          </p>
+          <h4>
+            Customization Options:
+          </h4>
         </motion.div>
       </motion.div>
+
+      <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
+        <div className="carousel-inner p-5 m-5">
+          <div className="carousel-item active" data-bs-interval="10000">
+            <img src="https://imgs.search.brave.com/fk8PPoN9nmFBJqocbJ_6D4-iFMK6F7rpWbY9lOLYdJk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS12ZWN0/b3Iva2l0dGVuLWNh/dC1pbWdlXzExMzg1/NDQtMjgxNTYuanBn/P3NpemU9NjI2JmV4/dD1qcGc" className="d-block w-100" alt="..."/>
+          </div>
+          <div className="carousel-item" data-bs-interval="2000">
+            <img src="https://imgs.search.brave.com/fk8PPoN9nmFBJqocbJ_6D4-iFMK6F7rpWbY9lOLYdJk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS12ZWN0/b3Iva2l0dGVuLWNh/dC1pbWdlXzExMzg1/NDQtMjgxNTYuanBn/P3NpemU9NjI2JmV4/dD1qcGc" className="d-block w-100" alt="..."/>
+          </div>
+          <div className="carousel-item">
+            <img src="https://imgs.search.brave.com/fk8PPoN9nmFBJqocbJ_6D4-iFMK6F7rpWbY9lOLYdJk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS12ZWN0/b3Iva2l0dGVuLWNh/dC1pbWdlXzExMzg1/NDQtMjgxNTYuanBn/P3NpemU9NjI2JmV4/dD1qcGc" className="d-block w-100" alt="..."/>
+          </div>
+        </div>
+        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev">
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Previous</span>
+        </button>
+        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next">
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Next</span>
+        </button>
+      </div> 
     </div>
   );
 }
