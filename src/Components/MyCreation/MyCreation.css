@@ -46,7 +46,7 @@
 
 .caroposition{
   position: absolute;
-  top: 30%;
+  top: 50%;
   left: 3%;
   height: 10%;
   width: 90%;
@@ -56,8 +56,12 @@
 /* Table Styles */
 .animated-table {
   margin-top: 20px;
-  padding: 10px;
+  padding: 40px;
   z-index: 200;
+  position: absolute;
+  top: 25%;
+  width: 90%;
+  height: 60%;
 }
 
 table {
@@ -68,17 +72,17 @@ table {
 }
 
 thead {
-  background-color: #f2f2f2;
+  background-color: #80ff9e;
 }
 
 th, td {
-  border: 1px solid #ddd;
+  border: 1px solid #fd7cd2;
   padding: 10px;
   text-align: left;
 }
 
 th {
-  background-color: #f9f9f9;
+  background-color: #ff6060;
 }
 
 tr {
@@ -86,5 +90,5 @@ tr {
 }
 
 tr:hover {
-  background-color: #f1f1f1;
+  background-color: #846fff;
 }

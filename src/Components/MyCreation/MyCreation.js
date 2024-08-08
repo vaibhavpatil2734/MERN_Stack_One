@@ -1,37 +1,8 @@
-import React, { useRef, useState, useEffect } from 'react';
-import { motion, useAnimation } from 'framer-motion';
+import React from 'react';
+import { motion } from 'framer-motion';
 import './MyCreation.css';
 
 export default function MyCreation() {
-  const tableRef = useRef(null);
-  const controls = useAnimation();
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          controls.start({ opacity: 1, y: 0 });
-        } else {
-          setIsVisible(false);
-          controls.start({ opacity: 0, y: 50 });
-        }
-      },
-      { threshold: 0.2 } // Adjust this value based on when you want the animation to start
-    );
-
-    if (tableRef.current) {
-      observer.observe(tableRef.current);
-    }
-
-    return () => {
-      if (tableRef.current) {
-        observer.unobserve(tableRef.current);
-      }
-    };
-  }, [controls]);
-
   return (
     <div>
       <motion.div 
@@ -105,14 +76,15 @@ export default function MyCreation() {
           </button>
         </div>
         <motion.div 
-          ref={tableRef}
           className="animated-table"
-          animate={controls}
-          transition={{ duration: 1 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 2 }}
         >
           <motion.table
-            initial={{ opacity: 0, y: 50 }}
-            animate={controls}
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
           >
             <thead>
               <tr>
@@ -141,7 +113,7 @@ export default function MyCreation() {
                 <motion.tr
                   key={num}
                   initial={{ opacity: 0 }}
-                  animate={controls}
+                  animate={{ opacity: 1 }}
                   transition={{ duration: 0.5, delay: num * 0.2 }}
                 >
                   <td>
