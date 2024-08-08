@@ -1,8 +1,37 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useRef, useState, useEffect } from 'react';
+import { motion, useAnimation } from 'framer-motion';
 import './MyCreation.css';
 
 export default function MyCreation() {
+  const tableRef = useRef(null);
+  const controls = useAnimation();
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          controls.start({ opacity: 1, y: 0 });
+        } else {
+          setIsVisible(false);
+          controls.start({ opacity: 0, y: 50 });
+        }
+      },
+      { threshold: 0.2 } // Adjust this value based on when you want the animation to start
+    );
+
+    if (tableRef.current) {
+      observer.observe(tableRef.current);
+    }
+
+    return () => {
+      if (tableRef.current) {
+        observer.unobserve(tableRef.current);
+      }
+    };
+  }, [controls]);
+
   return (
     <div>
       <motion.div 
@@ -54,7 +83,7 @@ export default function MyCreation() {
             The core functionality is to generate random passwords. Users can specify criteria such as length, inclusion of uppercase and lowercase letters, numbers, and special characters.
           </p>
         </motion.div>
-        <div id="carouselExampleInterval" className="caroposition carousel slide " data-bs-ride="carousel">
+        <div id="carouselExampleInterval" className="carousel slide caroposition" data-bs-ride="carousel">
           <div className="carousel-inner">
             <div className="carousel-item active" data-bs-interval="10000">
               <img src="https://imgs.search.brave.com/fk8PPoN9nmFBJqocbJ_6D4-iFMK6F7rpWbY9lOLYdJk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS12ZWN0/b3Iva2l0dGVuLWNh/dC1pbWdlXzExMzg1/NDQtMjgxNTYuanBn/P3NpemU9NjI2JmV4/dD1qcGc" className="d-block w-100 carousel-img" alt="..."/>
@@ -74,7 +103,70 @@ export default function MyCreation() {
             <span className="carousel-control-next-icon" aria-hidden="true"></span>
             <span className="visually-hidden">Next</span>
           </button>
-        </div> 
+        </div>
+        <motion.div 
+          ref={tableRef}
+          className="animated-table"
+          animate={controls}
+          transition={{ duration: 1 }}
+        >
+          <motion.table
+            initial={{ opacity: 0, y: 50 }}
+            animate={controls}
+          >
+            <thead>
+              <tr>
+                <th>
+                  <motion.span
+                    initial={{ scale: 0.5, opacity: 0 }}
+                    animate={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 0.5 }}
+                  >
+                    Feature
+                  </motion.span>
+                </th>
+                <th>
+                  <motion.span
+                    initial={{ scale: 0.5, opacity: 0 }}
+                    animate={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 0.5 }}
+                  >
+                    Description
+                  </motion.span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {[1, 2, 3, 4].map(num => (
+                <motion.tr
+                  key={num}
+                  initial={{ opacity: 0 }}
+                  animate={controls}
+                  transition={{ duration: 0.5, delay: num * 0.2 }}
+                >
+                  <td>
+                    <motion.span
+                      initial={{ x: -50, opacity: 0 }}
+                      animate={{ x: 0, opacity: 1 }}
+                      transition={{ duration: 0.5 }}
+                    >
+                      Feature {num}
+                    </motion.span>
+                  </td>
+                  <td>
+                    <motion.span
+                      initial={{ x: 50, opacity: 0 }}
+                      animate={{ x: 0, opacity: 1 }}
+                      transition={{ duration: 0.5 }}
+                    >
+                      Details about feature {num}.
+                    </motion.span>
+                  </td>
+                </motion.tr>
+              ))}
+            </tbody>
+          </motion.table>
+        </motion.div>
       </motion.div>
     </div>
   );
