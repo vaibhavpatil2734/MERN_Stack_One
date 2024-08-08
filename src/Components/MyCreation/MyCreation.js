@@ -53,13 +53,9 @@ export default function MyCreation() {
           <p>
             The core functionality is to generate random passwords. Users can specify criteria such as length, inclusion of uppercase and lowercase letters, numbers, and special characters.
           </p>
-          <h4>
-            Customization Options:
-          </h4>
+          
         </motion.div>
-      </motion.div>
-
-      <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleInterval" className="carousel slide caroposition" data-bs-ride="carousel">
         <div className="carousel-inner p-5 m-5">
           <div className="carousel-item active" data-bs-interval="10000">
             <img src="https://imgs.search.brave.com/fk8PPoN9nmFBJqocbJ_6D4-iFMK6F7rpWbY9lOLYdJk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS12ZWN0/b3Iva2l0dGVuLWNh/dC1pbWdlXzExMzg1/NDQtMjgxNTYuanBn/P3NpemU9NjI2JmV4/dD1qcGc" className="d-block w-100" alt="..."/>
@@ -82,6 +78,9 @@ export default function MyCreation() {
           <span className="visually-hidden">Next</span>
         </button>
       </div> 
+      </motion.div>
+
+      
     </div>
   );
 }
