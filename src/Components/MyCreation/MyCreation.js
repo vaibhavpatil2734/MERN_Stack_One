@@ -54,27 +54,7 @@ export default function MyCreation() {
             The core functionality is to generate random passwords. Users can specify criteria such as length, inclusion of uppercase and lowercase letters, numbers, and special characters.
           </p>
         </motion.div>
-        <div id="carouselExampleInterval" className="carousel slide caroposition" data-bs-ride="carousel">
-          <div className="carousel-inner">
-            <div className="carousel-item active" data-bs-interval="10000">
-              <img src="https://imgs.search.brave.com/fk8PPoN9nmFBJqocbJ_6D4-iFMK6F7rpWbY9lOLYdJk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS12ZWN0/b3Iva2l0dGVuLWNh/dC1pbWdlXzExMzg1/NDQtMjgxNTYuanBn/P3NpemU9NjI2JmV4/dD1qcGc" className="d-block w-100 carousel-img" alt="..."/>
-            </div>
-            <div className="carousel-item" data-bs-interval="2000">
-              <img src="https://imgs.search.brave.com/fk8PPoN9nmFBJqocbJ_6D4-iFMK6F7rpWbY9lOLYdJk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS12ZWN0/b3Iva2l0dGVuLWNh/dC1pbWdlXzExMzg1/NDQtMjgxNTYuanBn/P3NpemU9NjI2JmV4/dD1qcGc" className="d-block w-100 carousel-img" alt="..."/>
-            </div>
-            <div className="carousel-item">
-              <img src="https://imgs.search.brave.com/fk8PPoN9nmFBJqocbJ_6D4-iFMK6F7rpWbY9lOLYdJk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS12ZWN0/b3Iva2l0dGVuLWNh/dC1pbWdlXzExMzg1/NDQtMjgxNTYuanBn/P3NpemU9NjI2JmV4/dD1qcGc" className="d-block w-100 carousel-img" alt="..."/>
-            </div>
-          </div>
-          <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Previous</span>
-          </button>
-          <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Next</span>
-          </button>
-        </div>
+        
         <motion.div 
           className="animated-table"
           initial={{ opacity: 0 }}
@@ -140,6 +120,22 @@ export default function MyCreation() {
           </motion.table>
         </motion.div>
       </motion.div>
+      <div className='caroclass'>
+  <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
+    <div className="carousel-inner">
+      <div className="carousel-item active">
+        <img src="https://imgs.search.brave.com/sss5pux4ltmYuSwOTlBP7TzbP-QcZQB8MnSFVA6nEmk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9kMWNz/YXJrejhvYmU5dS5j/bG91ZGZyb250Lm5l/dC9wb3N0ZXJwcmV2/aWV3cy9saW5rZWRp/biwtZXZlbnQtZGVz/aWduLXRlbXBsYXRl/LWMwZjc0ZGY0MjEx/NWVmOWU1ZmQ4MzBh/YjFmMjg0MzVlLmpw/Zz90cz0xNTkzNDQz/NTYy" className="posterimg d-block w-100" alt="..." />
+      </div>
+      <div className="carousel-item">
+        <img src="https://imgs.search.brave.com/ecVO6QNrtngu-MxXnPyNILNBz3YXe4n5pfgefv4eGEw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9kMWNz/YXJrejhvYmU5dS5j/bG91ZGZyb250Lm5l/dC9wb3N0ZXJwcmV2/aWV3cy9tb2Rlcm4t/Y2VvLWFubm91bmNl/bWVudC1saW5rZWRp/bi1iYWNrZ3JvdW5k/LWktZGVzaWduLXRl/bXBsYXRlLWM2N2U3/MzZmNTgxM2M3NDBk/NjdhNTAyNTVjZjhj/NDEyLmpwZz90cz0x/NTc5Njg5Nzk2" className="posterimg d-block w-100" alt="..." />
+      </div>
+      <div className="carousel-item">
+        <img src="https://imgs.search.brave.com/sss5pux4ltmYuSwOTlBP7TzbP-QcZQB8MnSFVA6nEmk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9kMWNz/YXJrejhvYmU5dS5j/bG91ZGZyb250Lm5l/dC9wb3N0ZXJwcmV2/aWV3cy9saW5rZWRp/biwtZXZlbnQtZGVz/aWduLXRlbXBsYXRl/LWMwZjc0ZGY0MjEx/NWVmOWU1ZmQ4MzBh/YjFmMjg0MzVlLmpw/Zz90cz0xNTkzNDQz/NTYy" className="posterimg d-block w-100" alt="..." />
+      </div>
+    </div>
+  </div>
+</div>
+
     </div>
   );
 }

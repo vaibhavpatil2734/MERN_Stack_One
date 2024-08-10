@@ -57,7 +57,7 @@
 .animated-table {
   margin-top: 20px;
   padding: 40px;
-  z-index: 200;
+  z-index: 2;
   position: absolute;
   top: 25%;
   width: 90%;
@@ -73,6 +73,11 @@ table {
 
 thead {
   background-color: #80ff9e;
+}
+.posterimg {
+  width: 900px;  /* Set your desired width */
+  height: 325px; /* Set your desired height */
+  object-fit:fill; /* Ensures the image covers the area, maintaining aspect ratio */
 }
 
 th, td {
@@ -91,4 +96,9 @@ tr {
 
 tr:hover {
   background-color: #846fff;
+}
+.caroclass{
+  position: absolute;
+  top: 110%;
+  left:22% ;
 }
