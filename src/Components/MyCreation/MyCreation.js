@@ -132,7 +132,6 @@ export default function MyCreation() {
       <img src="https://imgs.search.brave.com/sss5pux4ltmYuSwOTlBP7TzbP-QcZQB8MnSFVA6nEmk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9kMWNz/YXJrejhvYmU5dS5j/bG91ZGZyb250Lm5l/dC9wb3N0ZXJwcmV2/aWV3cy9saW5rZWRp/biwtZXZlbnQtZGVz/aWduLXRlbXBsYXRl/LWMwZjc0ZGY0MjEx/NWVmOWU1ZmQ4MzBh/YjFmMjg0MzVlLmpw/Zz90cz0xNTkzNDQz/NTYy" className="posterimg d-block w-100" alt="..." />
     </div>
   </div>
-  
 </div>
 
 

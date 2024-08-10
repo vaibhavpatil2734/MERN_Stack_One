@@ -102,4 +102,6 @@ tr:hover {
   top: 110%;
   left:22% ;
   width: 71%;
+  transition: ease-in;
+  animation-delay: 4000ms;
 }
