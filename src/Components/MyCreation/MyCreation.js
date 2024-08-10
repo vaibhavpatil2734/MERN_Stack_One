@@ -120,21 +120,22 @@ export default function MyCreation() {
           </motion.table>
         </motion.div>
       </motion.div>
-      <div className='caroclass'>
-  <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
-    <div className="carousel-inner">
-      <div className="carousel-item active">
-        <img src="https://imgs.search.brave.com/sss5pux4ltmYuSwOTlBP7TzbP-QcZQB8MnSFVA6nEmk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9kMWNz/YXJrejhvYmU5dS5j/bG91ZGZyb250Lm5l/dC9wb3N0ZXJwcmV2/aWV3cy9saW5rZWRp/biwtZXZlbnQtZGVz/aWduLXRlbXBsYXRl/LWMwZjc0ZGY0MjEx/NWVmOWU1ZmQ4MzBh/YjFmMjg0MzVlLmpw/Zz90cz0xNTkzNDQz/NTYy" className="posterimg d-block w-100" alt="..." />
-      </div>
-      <div className="carousel-item">
-        <img src="https://imgs.search.brave.com/ecVO6QNrtngu-MxXnPyNILNBz3YXe4n5pfgefv4eGEw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9kMWNz/YXJrejhvYmU5dS5j/bG91ZGZyb250Lm5l/dC9wb3N0ZXJwcmV2/aWV3cy9tb2Rlcm4t/Y2VvLWFubm91bmNl/bWVudC1saW5rZWRp/bi1iYWNrZ3JvdW5k/LWktZGVzaWduLXRl/bXBsYXRlLWM2N2U3/MzZmNTgxM2M3NDBk/NjdhNTAyNTVjZjhj/NDEyLmpwZz90cz0x/NTc5Njg5Nzk2" className="posterimg d-block w-100" alt="..." />
-      </div>
-      <div className="carousel-item">
-        <img src="https://imgs.search.brave.com/sss5pux4ltmYuSwOTlBP7TzbP-QcZQB8MnSFVA6nEmk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9kMWNz/YXJrejhvYmU5dS5j/bG91ZGZyb250Lm5l/dC9wb3N0ZXJwcmV2/aWV3cy9saW5rZWRp/biwtZXZlbnQtZGVz/aWduLXRlbXBsYXRl/LWMwZjc0ZGY0MjEx/NWVmOWU1ZmQ4MzBh/YjFmMjg0MzVlLmpw/Zz90cz0xNTkzNDQz/NTYy" className="posterimg d-block w-100" alt="..." />
-      </div>
+      <div id="carouselExampleFade" className="caroclass carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="40000">
+  <div className="carousel-inner ">
+    <div className="carousel-item active" data-bs-interval="4000">
+      <img src="https://imgs.search.brave.com/ecVO6QNrtngu-MxXnPyNILNBz3YXe4n5pfgefv4eGEw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9kMWNz/YXJrejhvYmU5dS5j/bG91ZGZyb250Lm5l/dC9wb3N0ZXJwcmV2/aWV3cy9tb2Rlcm4t/Y2VvLWFubm91bmNl/bWVudC1saW5rZWRp/bi1iYWNrZ3JvdW5k/LWktZGVzaWduLXRl/bXBsYXRlLWM2N2U3/MzZmNTgxM2M3NDBk/NjdhNTAyNTVjZjhj/NDEyLmpwZz90cz0x/NTc5Njg5Nzk2" className="posterimg d-block w-100" alt="..." />
+    </div>
+    <div className="carousel-item" data-bs-interval="4000">
+      <img src="https://imgs.search.brave.com/ecVO6QNrtngu-MxXnPyNILNBz3YXe4n5pfgefv4eGEw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9kMWNz/YXJrejhvYmU5dS5j/bG91ZGZyb250Lm5l/dC9wb3N0ZXJwcmV2/aWV3cy9tb2Rlcm4t/Y2VvLWFubm91bmNl/bWVudC1saW5rZWRp/bi1iYWNrZ3JvdW5k/LWktZGVzaWduLXRl/bXBsYXRlLWM2N2U3/MzZmNTgxM2M3NDBk/NjdhNTAyNTVjZjhj/NDEyLmpwZz90cz0x/NTc5Njg5Nzk2" className="posterimg d-block w-100" alt="..." />
+    </div>
+    <div className="carousel-item" data-bs-interval="4000">
+      <img src="https://imgs.search.brave.com/sss5pux4ltmYuSwOTlBP7TzbP-QcZQB8MnSFVA6nEmk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9kMWNz/YXJrejhvYmU5dS5j/bG91ZGZyb250Lm5l/dC9wb3N0ZXJwcmV2/aWV3cy9saW5rZWRp/biwtZXZlbnQtZGVz/aWduLXRlbXBsYXRl/LWMwZjc0ZGY0MjEx/NWVmOWU1ZmQ4MzBh/YjFmMjg0MzVlLmpw/Zz90cz0xNTkzNDQz/NTYy" className="posterimg d-block w-100" alt="..." />
     </div>
   </div>
+  
 </div>
+
+
 
     </div>
   );
