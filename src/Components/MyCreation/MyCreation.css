@@ -105,3 +105,11 @@ tr:hover {
   transition: ease-in;
   animation-delay: 4000ms;
 }
+
+.classtool{
+  position: absolute;
+  top: 160%;
+  width: 70%;
+  left: 23%;
+  background-color: #80ff9e;
+}
