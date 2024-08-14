@@ -111,5 +111,8 @@ tr:hover {
   top: 160%;
   width: 70%;
   left: 23%;
-  background-color: #80ff9e;
+}
+
+.cardcolortool{
+  background-color: #fd7cd2;
 }

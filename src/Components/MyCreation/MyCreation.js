@@ -135,22 +135,22 @@ export default function MyCreation() {
 </div>
 
 <div className='row classtool'>
-<div classNamelass="card" style={{width: "18rem" , padding:"3%"}}>
+<div classNamelass="card" style={{width: "20rem" }}>
   <img src="https://imgs.search.brave.com/aZhmWgXhRE0fudcEtDTtS6J0AvMqg5wkaOKa_djhSO0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9sb2dv/d2lrLmNvbS9jb250/ZW50L3VwbG9hZHMv/aW1hZ2VzL21vbmdv/ZGI5NzQwLmxvZ293/aWsuY29tLndlYnA" class="card-img-top" alt="..."/>
-  <div classNamelass="card-body">
-    <p classNamelass="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  <div className="card-body cardcolortool">
+    <p className="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
   </div>
 </div>
-<div classNamelass="card" style={{width: "18rem" , marginLeft:"9%", padding:"3%"}}>
+<div classNamelass="card" style={{width: "20rem" , marginLeft:"4%"}}>
   <img src="https://imgs.search.brave.com/aZhmWgXhRE0fudcEtDTtS6J0AvMqg5wkaOKa_djhSO0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9sb2dv/d2lrLmNvbS9jb250/ZW50L3VwbG9hZHMv/aW1hZ2VzL21vbmdv/ZGI5NzQwLmxvZ293/aWsuY29tLndlYnA" class="card-img-top" alt="..."/>
-  <div classNamelass="card-body">
-    <p classNamelass="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  <div className="card-body cardcolortool">
+    <p className="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
   </div>
 </div>
-<div classNamelass="card" style={{width: "18rem" , marginLeft:"9%", padding:"3%"}}>
+<div classNamelass="card" style={{width: "20rem" , marginLeft:"4%"}}>
   <img src="https://imgs.search.brave.com/aZhmWgXhRE0fudcEtDTtS6J0AvMqg5wkaOKa_djhSO0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9sb2dv/d2lrLmNvbS9jb250/ZW50L3VwbG9hZHMv/aW1hZ2VzL21vbmdv/ZGI5NzQwLmxvZ293/aWsuY29tLndlYnA" class="card-img-top" alt="..."/>
-  <div classNamelass="card-body">
-    <p classNamelass="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  <div className="card-body cardcolortool">
+    <p className="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
   </div>
 </div>
 </div>
