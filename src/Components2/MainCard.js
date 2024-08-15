@@ -8,6 +8,7 @@ import About from '../Components/About';
 import Blogs from '../Components/Blogs';
 import TaskManager from '../Components/TaskTool/TaskManager';
 import MyCreation from '../Components/MyCreation/MyCreation';
+import Mygallery from '../MyGallery/Mygallery';
 
 export default function MainCard(props) {
   const [tasks, setTasks] = useState([]);
@@ -54,6 +55,7 @@ export default function MainCard(props) {
           </div>
         )}
         {props.num === 4 && <div style={{zIndex:100}}><MyCreation/></div>}
+        {props.num === 5 && <div style={{zIndex:100}}><Mygallery/></div>}
         {props.num === 100 && <div><About/></div>}
         
       </div>
