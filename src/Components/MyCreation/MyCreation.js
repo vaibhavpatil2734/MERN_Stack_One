@@ -1,10 +1,12 @@
 import React from 'react';
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { motion } from 'framer-motion';
 import './MyCreation.css';
 
 export default function MyCreation() {
+
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: '-100px' });
   return (
     <div>
       <motion.div 
@@ -136,14 +138,14 @@ export default function MyCreation() {
   </div>
 </div>
 
-<div className='row classtool'>
+<div ref={ref} className='row classtool'>
       <motion.div
         className="card"
         style={{ width: "20rem" }}
         whileHover={{ scale: 1.1, rotate: 5 }}
         whileTap={{ scale: 0.95 }}
         initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
+        animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.5 }}
       >
         <motion.img 
@@ -156,7 +158,7 @@ export default function MyCreation() {
         <motion.div 
           className="card-body cardcolortool"
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          animate={isInView ? { opacity: 1 } : {}}
           transition={{ duration: 0.5, delay: 0.5 }}
         >
           <p className="card-text">
@@ -171,7 +173,7 @@ export default function MyCreation() {
         whileHover={{ scale: 1.1, rotate: 5 }}
         whileTap={{ scale: 0.95 }}
         initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
+        animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
         <motion.img 
@@ -184,7 +186,7 @@ export default function MyCreation() {
         <motion.div 
           className="card-body cardcolortool"
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          animate={isInView ? { opacity: 1 } : {}}
           transition={{ duration: 0.5, delay: 0.5 }}
         >
           <p className="card-text">
@@ -199,7 +201,7 @@ export default function MyCreation() {
         whileHover={{ scale: 1.1, rotate: 5 }}
         whileTap={{ scale: 0.95 }}
         initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
+        animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.5, delay: 0.4 }}
       >
         <motion.img 
@@ -212,7 +214,7 @@ export default function MyCreation() {
         <motion.div 
           className="card-body cardcolortool"
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          animate={isInView ? { opacity: 1 } : {}}
           transition={{ duration: 0.5, delay: 0.5 }}
         >
           <p className="card-text">
@@ -221,8 +223,6 @@ export default function MyCreation() {
         </motion.div>
       </motion.div>
     </div>
-
-
     </div>
   );
 }
