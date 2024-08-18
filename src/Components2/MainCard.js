@@ -31,7 +31,7 @@ export default function MainCard(props) {
   };
 
   return (
-    <div>
+    <div className='maincardpos'>
       <div className='bg-danger'>
         <div className="video-background">
           {props.num === 1 ? (
